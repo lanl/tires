@@ -23,4 +23,4 @@ jobs:
 
       # retrieve your distributions here
       - name: Publish package distributions to PyPI
-        run: uv build && uv publish
+        run: uv run tires version && uv build && uv publish
