@@ -9,7 +9,13 @@ on:
 
 jobs:
   test:
-    if: "!startsWith(github.event.head_commit.message, '[BUMP]: update to')"
+    if: >
+      ${{
+        !(
+          startsWith(github.event.head_commit.message, '[BUMP]: update to') ||
+          startsWith(github.event.head_commit.message, '[SKIP]')
+        )
+      }}
     runs-on: ${{ matrix.os }}
     continue-on-error: ${{ matrix.os == 'windows-latest' }}
     strategy:

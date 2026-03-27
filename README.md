@@ -109,7 +109,7 @@ python = ["3.12"]
 ## LANL Software Release Information
 * O5084
 
-[ci-status-img]: https://img.shields.io/github/actions/workflow/status/lanl/tires/CI.yml?style=flat-square&label=CI
+[ci-status-img]: https://img.shields.io/github/actions/workflow/status/lanl/tires/CI.yaml?style=flat-square&label=CI
 [pypi-version]: https://img.shields.io/pypi/v/tires?style=flat-square&label=PyPI
 [pypi-downloads]: https://img.shields.io/pypi/dm/tires?style=flat-square&label=Downloads&color=blue
 [examples-demos]: https://github.com/lanl/tires/tree/main/examples
