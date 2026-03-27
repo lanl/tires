@@ -1,0 +1,39 @@
+[project]
+name = "tires"
+version = "0.1.0"
+description = "Install wheels in parallel"
+readme = "README.md"
+authors = [
+    { name = "Arthur Lui", email = "alui@lanl.gov" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.24.1,<0.25.0",
+    "uv>=0.11.1,<0.12.0",
+]
+
+[project.scripts]
+tires = "tires:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 80
+preview = true
+
+[tool.ruff.lint]
+extend-ignore = ["BLE001"]
+extend-select = ["I", "TID", "UP006", "UP007"]
+pydocstyle.convention = "google"
+pycodestyle.max-doc-length = 80
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"typing_extensions" = { msg = "Use standard typing features instead of `typing_extensions`." }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.8,<0.16.0",
+    "ty>=0.0.26,<0.0.27",
+]

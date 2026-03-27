@@ -1,0 +1,21 @@
+.DS_Store
+*.png
+*.csv
+iteration*txt
+*.swp
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.sql
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+
+# Misc
+wheels/

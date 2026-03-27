@@ -1,0 +1,14 @@
+# Basic usage. Can specify a PyPI package name or github url.
+[packages]
+scipy = {}
+'git+https://github.com/lanl/tires.git' = {}
+numpy = { versions = ["2.4.1", "1.26.4", ""], python = ["3.10", "3.13"] }
+
+[packages.setuptools]
+versions = [">=70,<73", ">79", ">81"] # can specify versions and bounds
+python = ["3.12"] # can specify python version
+
+# Can specify torch backend, like in uv
+[packages.torch]
+torch-backend = ["cu126"]
+python = ["3.12"]
