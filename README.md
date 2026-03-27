@@ -21,10 +21,13 @@ downloaded. Wheels are built only for the current platform.
 
 ## Installation
 
+**uv**
 ```sh
 uv tool install tires
+```
 
-# Or
+**pip**
+```sh
 pip install tires
 ```
 
