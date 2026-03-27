@@ -1,6 +1,10 @@
 [packages]
 scipy = {}
-'git+https://github.com/lanl/tires.git' = {}
+tires = {}
+'git+https://github.com/luiarthur/bump-cli' = {}
+arianna-ppl = {}
+
+# NOTE: 2.4.1 does not exist. So, we expected a warning.
 numpy = { versions = ["2.4.1", "1.26.4", ""], python = ["3.10", "3.13"] }
 
 [packages.setuptools]
