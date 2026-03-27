@@ -12,7 +12,7 @@ jobs:
     if: >
       ${{
         !(
-          startsWith(github.event.head_commit.message, '[BUMP]: update to') ||
+          startsWith(github.event.head_commit.message, '[BUMP]') ||
           startsWith(github.event.head_commit.message, '[SKIP]')
         )
       }}
