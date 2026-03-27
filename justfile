@@ -12,9 +12,9 @@ test threads="32":
 [private]
 @_bump kind:
     uv version --bump {{ kind }}
-    git tag "v$(uv version --short)"
     git commit -am "update to $(uv version --short)"
     git push
+    git tag "v$(uv version --short)"
     git push --tags
 
 @bump kind:
