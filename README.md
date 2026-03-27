@@ -3,7 +3,7 @@
 [![PyPI Version][pypi-version]](https://pypi.org/project/tires/)
 [![PyPI Downloads][pypi-downloads]](https://pypistats.org/packages/tires)
 
-A cli tool to download wheels in parallel.
+A CLI tool to download wheels in parallel.
 
 `tires` is a solution for mirroring packages. Tools like [`bandersnatch`][1]
 will download every PyPI version of a package, which can be overkill if you
