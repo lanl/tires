@@ -87,7 +87,7 @@ python = ["3.12"]
 
 - If `versions` is not specified, it defaults to the latest stable release version.
 - If `python` is not specified, it defaults to the Python versions provided to
-  the `tires get` command (or the default: "3.10 3.11 3.12 3.13 3.14").
+  the `tires get` command (or the default: `"3.10 3.11 3.12 3.13 3.14"`).
 - An empty string in `versions` (`""`) is interpreted as "latest".
 - Version specifiers that do not start with an operator (like `==`, `>=`, etc.)
   are treated as exact versions and will be prefixed with `==`.
