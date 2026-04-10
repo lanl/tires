@@ -111,7 +111,7 @@ wheels = [
 
 [[package]]
 name = "tires"
-version = "0.1.10"
+version = "0.1.11"
 source = { editable = "." }
 dependencies = [
     { name = "typer" },
