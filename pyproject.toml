@@ -1,6 +1,6 @@
 [project]
 name = "tires"
-version = "0.1.11"
+version = "0.1.12"
 description = "Install wheels in parallel"
 readme = "README.md"
 authors = [
