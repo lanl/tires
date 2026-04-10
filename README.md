@@ -48,13 +48,13 @@ defined as a key under `[packages]` with a table of options.
 ### Options
 
 - `versions`: A list of version specifiers (strings). Each specifier can be:
-    - An exact version (e.g., "1.26.4")
-    - A version range (e.g., ">=70,<73")
-    - An empty string (meaning "latest")
-- `python`: A list of Python version strings (e.g., ["3.10", "3.12"]) for which
+    - An exact version (e.g., `"1.26.4"`)
+    - A version range (e.g., `">=70,<73"`)
+    - An empty string (meaning `"latest"`)
+- `python`: A list of Python version strings (e.g., `["3.10", "3.12"]`) for which
   to build wheels.
-- `torch-backend`: (Optional) A list of torch backends 
-  (e.g., ["cu126", "auto"]) as supported by `uv`.
+- `torch-backend`: (Optional) A list of torch back ends
+  (e.g., `["cu126", "auto"]`) as supported by `uv`.
 - `index`: (Optional) A custom package index URL.
 
 ### Examples
